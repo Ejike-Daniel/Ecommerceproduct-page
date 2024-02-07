@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="w-full m-auto bg-white h-screen">
+    <header class="bg-[#FFFFFF]">
+      <nav class="flex text-center justify-between relative mx-1 my-2 md:gap-2">
+        <div class="flex h-5 m-4 gap-5">
+          <!-- hamburger icon -->
+          <button
+            onclick="showSideBar()"
+            class="hamburger md:hidden xl:hidden lg:hidden"
+          >
+            <img
+              src="../public/images/icon-menu.svg"
+              class="w-6 h-4 mt-2"
+              alt="hamburger img"
+            />
+          </button>
+
+          <a href="index.html"
+            ><img
+              src="../public/images/logo.svg"
+              class="h-5 mt-1 md:my-3 md:ml-16"
+              alt="logo"
+          /></a>
+        </div>
+
+        <!-- list -->
+        <div
+          class="w-60 mb-8 list-none navList absolute left-0 h-screen border-2 bg-slate-50 border-slate-50 z-20 md:shadow-none md:w-fit md:bg-none md:flex-row hidden md: gap-6 xl:shadow-none lg:w-fit lg:flex lg:mr-60 lg:m-1 lg:bg-transparent lg:border-none lg:shadow-none"
+        >
+          <ul
+            class="flex flex-col items-start gap-3 mr-[10rem] mb-[8rem] font-bold md:flex-row md:my-3 md:ml-56 lg:flex lg:mb-10"
+          >
+            <!-- delete icon-button -->
+            <li class="mx-4 my-2">
+              <button
+                onclick="hideSideBar()"
+                class="delete hidden xl:hidden lg:hidden"
+              >
+                <img
+                  src="../public/images/icon-close.svg"
+                  class="w-5 h-5 mt-2"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="mx-4 my-2 md:inline">
+              <a href="#" class="text-xl hover:text-orange-400 duration-500"
+                >Collections</a
+              >
+            </li>
+            <li class="mx-4 my-2 md:inline">
+              <a href="#" class="text-xl hover:text-orange-400 duration-500"
+                >Men</a
+              >
+            </li>
+            <li class="mx-4 my-2 md:inline">
+              <a href="#" class="text-xl hover:text-orange-400 duration-500"
+                >Women</a
+              >
+            </li>
+            <li class="mx-4 my-2 md:inline">
+              <a href="#" class="text-xl hover:text-orange-400 duration-500"
+                >About</a
+              >
+            </li>
+            <li class="mx-4 my-2 md:inline">
+              <a href="#" class="text-xl hover:text-orange-400 duration-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- cart and profile -->
+        <div
+          class="flex h-5 mt-4 mr-2 gap-7 items-center md:mr-20 md:my-6 lg:mr-20"
+        >
+          <button id="cartList">
+            <img
+              src="../public/images/icon-cart.svg"
+              class="w-6 h-6 mt-2 md:w-6 md:h-6 lg:w-8 lg:h-8"
+            />
+          </button>
+          <img
+            src="../public/images/image-avatar.png"
+            class="w-8 h-8 mt-2"
+            alt=""
+          />
+        </div>
+      </nav>
+      <hr class="md:w-[89%] md:mx-auto" />
+    </header>
+    <main class="flex flex-col gap-5 md:flex-row md:my-6">
+      <!-- imgage slider -->
+      <section class="md:mt-16 md:ml-32">
+        <div class="w-full md:w-[20rem] md:h-16">
+          <img
+            class="md:w-[85%] md:rounded-xl md:mb-4"
+            src="../public/images/image-product-1.jpg"
+            alt=""
+          />
+
+          <div class="hidden md:flex lg:flex gap-6 w-12 h-12">
+            <img
+              src="../public/images/image-product-1.jpg"
+              class="rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500"
+            />
+            <img
+              src="../public/images/image-product-2.jpg"
+              class="rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500"
+              alt=""
+            />
+            <img
+              src="../public/images/image-product-3.jpg"
+              class="rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500"
+              alt=""
+            />
+            <img
+              src="../public/images/image-product-4.jpg"
+              class="rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 lg:hover:border-orange-500:"
+              alt=""
+            />
+          </div>
+        </div>
+        <button
+          class="bg-white w-8 h-8 rounded-full absolute top-[15rem] z-10 ml-7 md:hidden lg:hidden"
+        >
+          <img
+            class="m-2"
+            src="../public/images/icon-previous.svg"
+            alt="next icon"
+          />
+        </button>
+        <button
+          class="bg-white w-8 h-8 rounded-full absolute top-[15rem] mr-3 right-5 md:hidden lg:hidden"
+        >
+          <img
+            class="m-2"
+            src="../public/images/icon-next.svg"
+            alt="next icon"
+          />
+        </button>
+
+        <!--  product details-->
+        <section class="ml-8 ">
+          <h2 class="uppercase text-orange-500 font-semibold text-[16px] my-2">
+            Sneaker Company
+          </h2>
+          <h3 class="capitalize font-bold text-[30px] pr-[2rem] leading-8 my-2 mb-2">
+            Fall Limited Edition Sneakers
+          </h3>
+          <p class="pr-[4rem] text-slate-400 ">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <!-- cart  button and quantity counter-->
+
+          <div class="m-1">
+            <div class="flex gap-3 my-4">
+              <p class="font-bold text-[22px]">$125.00</p>
+              <span
+                class="bg-orange-200 text-orange-500 w-11 h-6 text-center justify-center font-semibold rounded-md mt-1"
+                >50%</span
+              >
+              <p class="line-through text-slate-400 font-semibold ml-24">
+                $250.00 0
+              </p>
+            </div>
+            <div
+              class="bg-slate-100 flex gap-4 justify-between mr-40 h-12 w-80 rounded-lg mb-3"
+            >
+              <button class="m-4 shadow-slate-400">
+                <img src="../public/images/icon-minus.svg" alt="minus icon" />
+              </button>
+              <p class="text-black font-semibold m-3">0</p>
+              <button class="m-4">
+                <img src="../public/images/icon-plus.svg" alt="icon-plus " />
+              </button>
+            </div>
+            <button
+              class="flex text-white bg-orange-500 gap-3 mr-40 h-12 w-80 rounded-lg p-3 justify-center shadow-orange-500 shadow-inner"
+            >
+              <img
+                class="fill-white"
+                src="../public/images/icon-cart.svg"
+                alt=""
+              />
+              <span class="font-semibold shadow-orange-500">Add to cart</span>
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+
+  <script src="script.js"></script>
+</html>
