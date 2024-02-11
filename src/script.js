@@ -28,15 +28,43 @@ function showSlide(index) {
     }
   });
 }
-
+// previous button
 function prevSlide() {
   currentSlide = (currentSlide - 1 + 4) % 4;
   showSlide(currentSlide);
 }
 
+// The next buttton's function
 function nextSlide() {
   currentSlide = (currentSlide + 1) % 4;
   showSlide(currentSlide);
 }
 
 showSlide(currentSlide);
+
+// image display
+
+// Referencing to the necessary elements (classes and id)
+const imageDisplayContainer = document.querySelector(
+  ".image-Display-Container"
+);
+const displayedImage = document.getElementById("displayedImage");
+const closeButton = document.querySelector(".close");
+const imageContainer = document.querySelector(".img-container");
+
+// Adding an event-listener to the image container
+imageContainer.addEventListener("click", (e) => {
+  // checking if the clicked element is an img
+  if (e.target.tagName === "IMG") {
+    // if it's an image, get the source attribute(src)
+    const src = e.target.getAttribute("src");
+    // set the src of the displayed image to the clicked image's src
+    displayedImage.setAttribute("src", src);
+    // remove the hidden class of the image display container to show it's content
+    imageDisplayContainer.classList.remove("hidden");
+  }
+});
+// Adding an event listener to the close button, once clicked , it adds the 'hidden' class to the image container
+closeButton.addEventListener("click", () => {
+  imageDisplayContainer.classList.add("hidden");
+});

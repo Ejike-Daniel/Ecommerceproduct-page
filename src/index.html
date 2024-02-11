@@ -166,32 +166,36 @@
             />
           </button>
           <!-- image display container -->
+
           <div
-            class="w-[25%] h-[41%] hidden rounded-lg top-36 ml-40 bg-slate-300 absolute z-40 imageDisplayContainer"
+            class="w-full min-h-[79%] hidden top-[1rem] ml-[3rem] bg-white absolute z-40 image-Display-Container rounded-full"
           >
-            <button class="ml[20rem] absolute z-50 bottom-[17rem] close">
+            <img src="" alt="" id="displayedImage" />
+            <button
+              class="w-8 h-8 rounded-full absolute z-50 bottom-[17.1rem] bg-white p-2 -left-1 close"
+            >
               <img src="../public/images/icon-close.svg" class="" alt="" />
             </button>
           </div>
 
-          <div class="hidden md:flex lg:flex gap-6 w-[24rem] h-14">
+          <div class="hidden md:flex gap-6 w-[24rem] h-14 img-container">
             <img
               src="../public/images/image-product-1.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 image1"
+              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
             />
             <img
               src="../public/images/image-product-2.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 image2"
+              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
               alt=""
             />
             <img
               src="../public/images/image-product-3.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 image3"
+              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
               alt=""
             />
             <img
               src="../public/images/image-product-4.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 md:hover:border-orange-500 image4"
+              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 md:hover:border-orange-500 images"
               alt=""
             />
           </div>
@@ -199,44 +203,44 @@
       </section>
       <!--  product details-->
       <section
-        class="ml-8 mx-auto mb-8 md:ml[1rem] md:mt-16 md:mr-[16rem] md:px-3 w-[100%]"
+        class="w-full ml-10 mb-8 md:ml[1rem] md:mt-16 md:mr-[16rem] md:px-3"
       >
         <h2
-          class="uppercase text-orange-500 font-semibold text-[16px] my-2 md:text-sm"
+          class="uppercase text-orange-500 font-normal text-[16px] my-2 md:text-sm"
         >
           Sneaker Company
         </h2>
         <h3
-          class="capitalize font-bold text-[30px] pr-[2rem] leading-8 my-2 mb-2 md:mr-[11.2rem]"
+          class="capitalize font-bold text-[30px] pr-[2rem] leading-8 my-2 mb-2 md:mr-[9.2rem]"
         >
           Fall Limited Edition Sneakers
         </h3>
-        <p class="my-4 pr-[5rem] text-slate-400 md:mr-[13rem] lg:mr-[13.8rem]">
+        <p class="my-4 pr-[5rem] text-slate-400 md:mr-[13rem] lg:mr-[-1rem]">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
 
-        <!-- cart  button and quantity counter-->
-
         <div class="m-1">
-          <div class="flex gap-3 my-4 md:flex-col">
+          <!-- prize display -->
+          <div class="flex gap-3 my-4 md:flex-col md:gap-0">
             <div class="flex gap-3">
               <p class="font-bold text-[22px]">$125.00</p>
               <span
-                class="bg-orange-200 text-orange-500 w-10 h-6 text-center justify-center font-semibold rounded-md mt-1"
+                class="bg-orange-200 text-orange-500 w-10 h-6 text-center justify-center font-semibold rounded-md mt-1 md:w-8 md:h10"
                 >50%</span
               >
             </div>
             <p
-              class="line-through text-slate-400 font-semibold ml-[4rem] md:mx-0"
+              class="line-through text-slate-400 font-semibold ml-[4rem] md:mx-0 text-[12px] mt-2 md:mt-1"
             >
               $250.00 0
             </p>
           </div>
-          <div class="w-full md:flex md:gap-2">
+          <!-- cart  button and quantity counter-->
+          <div class="w-full h-full md:flex md:gap-1 md:mt-2">
             <div
-              class="bg-slate-100 w-[19.5rem] flex gap-4 justify-between cursor-pointer mr-40 h-12 rounded-lg mb-3 shadow-slate-1 00 shadow-sm md:w-[10rem]"
+              class="bg-slate-100 w-[19.5rem] flex gap-4 justify-between cursor-pointer mr-40 h-12 rounded-lg mb-3 shadow-slate-100 shadow-sm md:w-[9rem] md:mr-8"
             >
               <button class="m-4">
                 <img src="../public/images/icon-minus.svg" alt="minus icon" />
@@ -247,7 +251,7 @@
               </button>
             </div>
             <button
-              class="flex text-white bg-orange-500 gap-3 mr-40 h-12 w-[19.5rem] rounded-lg p-3 justify-center shadow-orange-500 shadow-md md:w-[14rem] md:mr-[3rem]"
+              class="flex text-white bg-orange-500 gap-3 mr-40 h-12 w-[19.5rem] rounded-lg p-3 justify-center shadow-orange-500 shadow-md md:w-[13rem] md:mr-[1rem]"
             >
               <img
                 class="fill-white"
