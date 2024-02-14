@@ -7,7 +7,6 @@ function showSideBar() {
   document.querySelector(".navList").classList.add("flex-col");
 }
 
-
 function hideSideBar() {
   document.querySelector(".hamburger").classList.toggle("hidden");
   document.querySelector(".delete").classList.toggle("hidden");
@@ -68,4 +67,12 @@ imageContainer.addEventListener("click", (e) => {
 // Adding an event listener to the close button, once clicked , it adds the 'hidden' class to the image container
 closeButton.addEventListener("click", () => {
   imageDisplayContainer.classList.add("hidden");
+});
+
+// image border color when clicked
+
+const image = document.querySelector(".images");
+
+images.addEventListener("onclick", () => {
+  images.classList.toggle("border-orange-500");
 });

@@ -15,8 +15,10 @@
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="w-full m-auto bg-white h-svh">
-    <header class="flex text-center justify-between  items-center w-full mx-auto h-[5rem] my-2 md:gap-2 md:relative">
+  <body class="w-full m-auto bg-white h-screen">
+    <header
+      class="flex text-center justify-between items-center w-full mx-auto h-[5rem] my-2 md:gap-2 md:relative"
+    >
       <div class="flex h-5 m-4 gap-5">
         <!-- hamburger icon -->
         <button
@@ -39,11 +41,9 @@
       </div>
       <!-- menu list -->
       <nav
-        class="w-60 hidden list-none navList absolute h-screen  bg-slate-50 border-2 border-slate-50 z-20 "
+        class="w-60 hidden list-none navList absolute top-1 -left-3 h-screen bg-slate-50 border-2 border-slate-50 z-20 ml-3"
       >
-        <ul
-          class="flex flex-col gap-2 mr-[10rem] mb-[8rem] font-bold "
-        >
+        <ul class="flex flex-col gap-2 mr-[10rem] mb-[8rem] font-bold">
           <li class="mx-4 my-2">
             <button
               onclick="hideSideBar()"
@@ -95,74 +95,70 @@
       </nav>
 
       <!-- navlist -->
-        <ul
-          class=" hidden md:flex  gap-2  font-semibold   mr-[25rem]  text-sm text-slate-400  justify-center items-center mt-[1.5rem]"
-        >
-         
-          <li class="mx-4 my-2 inline">
-            <a
-              href="#"
-              class=" md:text-[14px]duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
-              >Collections</a
-            >
-          </li>
-          <li class="mx-4 my-2 inline">
-            <a
-              href="#"
-              class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
-              >Men</a
-            >
-          </li>
-          <li class="mx-4 my-2 inline">
-            <a
-              href="#"
-              class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
-              >Women</a
-            >
-          </li>
-          <li class="mx-4 my-2 inline">
-            <a
-              href="#"
-              class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
-              >About</a
-            >
-          </li>
-          <li class="mx-4 my-2 inline">
-            <a
-              href="#"
-              class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      <!-- cart and profile -->
-      <div
-        class="flex h-5 mt-4 mr-2 gap-7 items-center md:mr-20 md:my-6 lg:mr-20"
+      <ul
+        class="hidden md:flex gap-2 font-semibold mr-[25rem] text-sm text-slate-400 justify-center items-center mt-[1.5rem]"
       >
+        <li class="mx-4 my-2 inline">
+          <a
+            href="#"
+            class="md:text-[14px]duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
+            >Collections</a
+          >
+        </li>
+        <li class="mx-4 my-2 inline">
+          <a
+            href="#"
+            class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
+            >Men</a
+          >
+        </li>
+        <li class="mx-4 my-2 inline">
+          <a
+            href="#"
+            class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
+            >Women</a
+          >
+        </li>
+        <li class="mx-4 my-2 inline">
+          <a
+            href="#"
+            class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
+            >About</a
+          >
+        </li>
+        <li class="mx-4 my-2 inline">
+          <a
+            href="#"
+            class="text-md md:text-[14px] duration-500 md:hover:border-b-4 md:hover:border-orange-400 md:hover:py-[30px] transition ease-in-out md:hover:text-black"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <!-- cart and profile -->
+      <div class="flex h-5 mt-4 mr-2 gap-7 items-center md:mr-20 md:my-3">
         <button id="cartList">
           <img
             src="../public/images/icon-cart.svg"
-            class="w-6 h-6 mt-2 md:w-6 md:h-6 lg:w-8 lg:h-8"
+            class="w-8 h-8 mt-2 md:w-8 md:h-8"
           />
         </button>
         <img
           src="../public/images/image-avatar.png"
-          class="w-8 h-8 mt-2 cursor-pointer border-gray-100 rounded-full border-2 hover:border-orange-500"
+          class="w-12 h-12 mt-2 cursor-pointer border-gray-100 rounded-full border-2 hover:border-orange-500"
           alt=""
         />
       </div>
-       <hr class="md:w-[88%] md:mx-auto md:absolute md:top-[6rem] md:ml-[5rem]" />
-
+      <hr
+        class="hidden md:block md:w-[88%] md:mx-auto md:absolute md:top-[6rem] md:ml-[5rem]"
+      />
     </header>
-    <main class="w-full flex flex-col gap-5 md:flex-row md:my-5 lg:flex">
+    <main class="w-full flex flex-col gap-5 md:flex-row md:my-5 md:gap-1">
       <!-- imgage slider -->
-      <section class="md:mt-16 md:ml-32">
-        <div
-          class="w-full md:w-[22rem] md:h-22 relative overflow-hidden slider"
-        >
+      <section class="md:mt-16 md:ml-[13rem] md:h-">
+        <div class="w-full md:h-22 relative slider">
           <div class="slides flex gap-2">
             <img
-              class="slider-img object-cover w-full transition duration-500 md:w-[85%] md:rounded-xl md:mb-4 image-Display-Container"
+              class="slider-img object-cover w-full transition duration-500 md:w-[100%] md:rounded-xl md:mb-4 image-Display-Container"
               src="../public/images/image-product-1.jpg"
               alt=""
               id="displayedImage"
@@ -218,53 +214,60 @@
             </button>
           </div> -->
 
-          <div
-            class="hidden md:flex gap-6 w-[24rem] h-14 lg:w-96 img-container"
-          >
-            <img
-              src="../public/images/image-product-1.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
-            />
-            <img
-              src="../public/images/image-product-2.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
-              alt=""
-            />
-            <img
-              src="../public/images/image-product-3.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
-              alt=""
-            />
-            <img
-              src="../public/images/image-product-4.jpg"
-              class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 lg:hover:border-orange-500 images"
-              alt=""
-            />
-          </div>
+          <ul class="hidden md:flex w-[24rem] h-14 gap-9 img-container">
+            <li>
+              <img
+                src="../public/images/image-product-1.jpg"
+                class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] border-orange-500 images"
+              />
+            </li>
+            <li>
+              <img
+                src="../public/images/image-product-2.jpg"
+                class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../public/images/image-product-3.jpg"
+                class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 images"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../public/images/image-product-4.jpg"
+                class="cursor-pointer rounded-md hover:border-2 hover:opacity-[0.5] hover:border-orange-500 lg:hover:border-orange-500 images"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <!--  product details-->
-      <section class="mb-8 md:mx-[1rem] md:mt-16 md:mr-[16rem] md:px-3">
-        <div class="mx-8 w-full ">
-           <h2
-          class="uppercase text-orange-500 font-normal text-[16px] my-2 md:text-sm"
-        >
-          Sneaker Company
-        </h2>
-        <h3
-          class="capitalize font-bold text-[30px] pr-[2rem] leading-8 my-2 mb-2 md:mr-[9.2rem]"
-        >
-          Fall Limited Edition Sneakers
-        </h3>
-        <p class="my-4 pr-[5rem] text-slate-400 md:mr-[13rem] lg:mr-[-1rem]">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
 
-        <div class="m-1">
+      <section class="mb-8 md:mx-[9rem] md:mt-[5.5rem]">
+        <div class="mx-8 w-full">
+          <h2
+            class="uppercase text-orange-500 font-normal text-[16px] my-2 md:text-sm"
+          >
+            Sneaker Company
+          </h2>
+          <h3
+            class="capitalize font-bold text-[30px] pr-[2rem] leading-8 my-2 mb-2 md:mr-[9.2rem]"
+          >
+            Fall Limited Edition Sneakers
+          </h3>
+          <p class="my-5 pr-[5rem] text-slate-400 md:mr-[13rem] lg:mr-[-1rem]">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="ml-[2rem]">
           <!-- prize display -->
-          <div class="flex gap-3 my-4 md:flex-col md:gap-0">
+          <div class="flex gap-3 my-4 md:flex-col">
             <div class="flex gap-3">
               <p class="font-bold text-[22px]">$125.00</p>
               <span
@@ -279,8 +282,9 @@
             </p>
           </div>
         </div>
+
         <!-- cart  button and quantity counter-->
-        <div class="w-full h-full mx- md:flex md:gap-1 md:mt-2">
+        <div class="w-full ml-[2rem] md:flex md:gap-1 md:mt-2">
           <div
             class="bg-slate-100 w-[19.5rem] flex gap-4 justify-between cursor-pointer mr-40 h-12 rounded-lg mb-3 shadow-slate-100 shadow-sm md:w-[9rem] md:mr-8"
           >
@@ -293,7 +297,7 @@
             </button>
           </div>
           <button
-            class="flex text-white bg-orange-500 gap-3 mr-40 h-12 w-[19.5rem] rounded-lg p-3 justify-center shadow-orange-500 shadow-md md:w-[13rem] md:mr-[1rem]"
+            class="flex text-white bg-orange-500 gap-3 mr-40 h-12 w-[19.5rem] rounded-lg p-3 justify-center shadow-orange-500 shadow-md md:w-[13rem] md:mr-[1rem] md:hover:bg-orange-400"
           >
             <img
               class="fill-white"
